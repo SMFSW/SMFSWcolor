@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """ colCIEObsLab.py
 Author: SMFSW
-Copyright (c) 2016-2018 SMFSW
+Copyright (c) 2016-2021 SMFSW
 Description: CIE-L*ab color space class
 """
 

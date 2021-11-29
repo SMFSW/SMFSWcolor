@@ -2,7 +2,7 @@
 """
 refsTools.py
 Author: SMFSW
-Copyright (c) 2016-2018 SMFSW
+Copyright (c) 2016-2021 SMFSW
 Some matrix are reproduced with kind permission from http://www.brucelindbloom.com
 Description: Color references shared amongst different classes
 """
@@ -365,7 +365,7 @@ class RefRGBWorkingSpace(object):
         rgb_ref = kwargs['rgb_ref_white'] if 'rgb_ref_white' in kwargs \
             and (isinstance(kwargs['rgb_ref_white'], str) or isinstance(kwargs['rgb_ref_white'], list)) else 'D65'
         to = kwargs['to'] if 'to' in kwargs and isinstance(kwargs['to'], str) else 'RGB'
-        adapt = kwargs['adaptation'] if 'adaptation' in kwargs and isinstance(kwargs['adaptation'], str) else 'XYZ Scaling'
+        adapt = kwargs['adaptation'] if 'adaptation' in kwargs and isinstance(kwargs['adaptation'], str) else 'None'
 
         # Compute XYZ reference for red, green & blue
         mtx = np.zeros((3, 3))

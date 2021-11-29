@@ -2,7 +2,7 @@
 """
 colHunterLab.py
 Author: SMFSW
-Copyright (c) 2016-2018 SMFSW
+Copyright (c) 2016-2021 SMFSW
 Description: Hunter-L*ab color space class
 """
 

@@ -2,7 +2,7 @@
 """
 colRAL.py
 Author: SMFSW
-Copyright (c) 2016-2018 SMFSW
+Copyright (c) 2016-2021 SMFSW
 Description: RAL color reference & class
 """
 # TODO: add search nearest

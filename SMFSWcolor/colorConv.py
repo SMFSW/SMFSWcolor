@@ -2,7 +2,7 @@
 """
 colorConv.py
 Author: SMFSW
-Copyright (c) 2016-2018 SMFSW
+Copyright (c) 2016-2021 SMFSW
 Description: Low level conversion algorithms
 """
 # TODO: see if round should be used before converting into integer (search int)
@@ -60,11 +60,10 @@ def XYZtoRGB(X, Y, Z, **kwargs):
     xyz = xyz / 100.0
     rgb = np.dot(m, xyz.T)
 
-    rgb[0] = gamma_compress(rgb[0], gamma=g)
-    rgb[1] = gamma_compress(rgb[1], gamma=g)
-    rgb[2] = gamma_compress(rgb[2], gamma=g)
+    for i in range(rgb.size):
+        rgb[i] = int(gamma_compress(rgb[i], gamma=g) * 255.0)
 
-    return tuple(int(rgb[i] * 255.0) for i in range(rgb.size))
+    return tuple(float(rgb[i]) for i in range(rgb.size))
 
 
 def RGBtoXYZ(R, G, B, **kwargs):

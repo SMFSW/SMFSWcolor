@@ -2,7 +2,7 @@
 """
 colorFuncs.py
 Author: SMFSW
-Copyright (c) 2016-2018 SMFSW
+Copyright (c) 2016-2021 SMFSW
 Description: Low level transformations, manipulations
 """
 
@@ -186,11 +186,12 @@ def rgG_to_RGB(r, g, G):
     return R, G, B
 
 
-def rgb_tristimulus_to_chromacity(r, g, b):
+def rgb_tristimulus_to_chromacity(r, g, b, neg=True):
     """ Convert RGB tristimulus to chromacity coordinates
     :param r: Red value
     :param g: Green value
     :param b: Blue value
+    :param neg: Allows keeping negative values in result
     :return: RGB chromacity coordinate """
     if min(r, g, b) < 0.0:
         print("RGB outside used gamut!")
@@ -205,18 +206,22 @@ def rgb_tristimulus_to_chromacity(r, g, b):
     l_rgb = r + g + b
     i_rgb = [i / l_rgb for i in (r, g, b)]
 
+    if neg is not True:
+        i_rgb = [max(0, i) for i in i_rgb]
+
     # returning ratio values
     return tuple(i_rgb)
 
 
-def rgb_maximize(r, g, b):
+def rgb_maximize(r, g, b, scale=255):
     """ Calculates full luminosity RGB values from rgb chromacity coordinates
     :param r: Red ratio
     :param g: Green ratio
     :param b: Blue ratio
+    :param scale: Output R,G,B values scale
     :return: RGB tuple
     """
-    ratio = 255 / max(r, g, b)
+    ratio = scale / max(r, g, b)
     return tuple(int(i * ratio) for i in (r, g, b))
 
 
