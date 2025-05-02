@@ -1,4 +1,5 @@
-# SMFSWcolor
+# SMFSWcolor [![CodeFactor](https://www.codefactor.io/repository/github/smfsw/smfswcolor/badge)](https://www.codefactor.io/repository/github/smfsw/smfswcolor)
+
 Author: SMFSW
 
 All the work involved here is dedicated to my beloved very special kitty Nietzschee
