@@ -2,7 +2,7 @@
 """
 colorConv.py
 Author: SMFSW
-Copyright (c) 2016-2021 SMFSW
+Copyright (c) 2016-2025 SMFSW
 Description: Low level conversion algorithms
 """
 # TODO: see if round should be used before converting into integer (search int)

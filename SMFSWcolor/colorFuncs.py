@@ -2,7 +2,7 @@
 """
 colorFuncs.py
 Author: SMFSW
-Copyright (c) 2016-2021 SMFSW
+Copyright (c) 2016-2025 SMFSW
 Description: Low level transformations, manipulations
 """
 

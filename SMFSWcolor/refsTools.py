@@ -2,7 +2,7 @@
 """
 refsTools.py
 Author: SMFSW
-Copyright (c) 2016-2021 SMFSW
+Copyright (c) 2016-2025 SMFSW
 Some matrix are reproduced with kind permission from http://www.brucelindbloom.com
 Description: Color references shared amongst different classes
 """
