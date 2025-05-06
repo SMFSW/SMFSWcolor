@@ -1,14 +1,21 @@
-# SMFSWcolor [![CodeFactor](https://www.codefactor.io/repository/github/smfsw/smfswcolor/badge)](https://www.codefactor.io/repository/github/smfsw/smfswcolor)
+# SMFSWcolor
 
-Author: SMFSW
+[![author](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/SMFSW/a9a2b2a02fda1b33461d53ddfe69d649/raw/auth_SMFSW.json)](https://github.com/SMFSW)
+![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/SMFSW/a9a2b2a02fda1b33461d53ddfe69d649/raw/SMFSWColor_status_badge.json)
+[![license](https://img.shields.io/badge/License-BSD3-darkred.svg)](LICENSE)
+[![CodeFactor](https://www.codefactor.io/repository/github/smfsw/smfswcolor/badge)](https://www.codefactor.io/repository/github/smfsw/smfswcolor)
+
+![platform](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/SMFSW/a9a2b2a02fda1b33461d53ddfe69d649/raw/platform_PY.json)
+
+![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/SMFSW/a9a2b2a02fda1b33461d53ddfe69d649/raw/SMFSWColor_custom_repo_badge.json)
 
 All the work involved here is dedicated to my beloved very special kitty Nietzschee
 who brought some harmony in my life (miss you so much).
 
-Copyright (c) 2016-2018 SMFSW
+Copyright (c) 2016-2025 SMFSW
 
 
-This package includes various color schemes classes, low level conversions and transformation functions
+This package includes various color schemes classes, low level conversions and transformation functions.
 
 ## Classes:
 - RefYYY: data dict classes
